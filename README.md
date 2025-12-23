@@ -1,16 +1,25 @@
-# React + Vite
+🔐 **Password Generator**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and secure password generator built to practice JavaScript logic and DOM manipulation. I created this project while following Love Babbar’s Web Development Course.
 
-Currently, two official plugins are available:
+**✨ Features**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Custom Rules:** Choose between Uppercase, Lowercase, Numbers, and Symbols.
+**Strength Indicator:** A color-changing circle (Red to Green) that shows how secure your password is.
+**Length Slider:** Easily set the password length between 1 and 20 characters.
+**Copy to Clipboard:** One-click copy with a custom "Copied!" alert.
 
-## React Compiler
+**Responsive Design:** Built with Tailwind CSS to look good on mobile and desktop.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**screen recording**
 
-## Expanding the ESLint configuration
+https://github.com/user-attachments/assets/e9b0cd83-bc86-4133-8b21-e4e4e3dabfa2
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Netlify:**https://passgen2026.netlify.app/
+
+
+**🛠️ Built With ❤️
+HTML5 & Vanilla JavaScript**
+
+**Tailwind CSS** (for styling and animations)
+**Vite** (for fast development)
