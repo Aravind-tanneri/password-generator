@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer utilities {
+
+  @keyframes infinite-pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.05); 
+      opacity: 1;           
+    }
+  }
+
+  .animate-pulse-infinite {
+    animation: infinite-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes fade-in-out {
+    0%, 100% { opacity: 0; transform: translateX(20px); }
+    25%,75% { opacity: 1; transform: translateX(0px); }
+  }
+
+  .animate-fade-infinite {
+    animation: fade-in-out 2s ease-in-out infinite;
+  }
+}

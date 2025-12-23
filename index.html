@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>passGen</title>
+    <link href="/src/index.css" rel="stylesheet">
+    <link rel="icon" href="src/assets/padlock.gif" type="image/gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <section class="flex justify-center items-center w-full h-screen bg-linear-[225deg,#020024_0%,#5b0979_80%,#8600c9_150%]">
+      <!-- generator -->
+      <div class="flex flex-col gap-4 p-5 rounded-xl">
+        <!-- red alert -->
+        <div id="redAlert" class="w-fit shadow-2xl animate-ping hidden relative bottom-0 mx-auto font-mono text-sm py-2 px-3 rounded select-none bg-red-600 text-white animate-pulse-infinite">
+          select atleast one checkbox!
+        </div>
+        <!-- copy alert -->
+        <div id="copyAlert" class="w-fit fixed animate-fade-infinite shadow-2xl hidden max-sm:relative max-sm:mx-auto max-sm:my-0 text-gray-700 bottom-0 right-0 m-7 text-sm py-2 px-3 rounded select-none bg-white">
+          copied to clipboard!
+        </div>
+        <!-- heading -->
+        <h1 class="text-[#f0e3ef] font-bold text-xl tracking-wider">PASSWORD GENERATOR</h1>
+        <!-- result -->
+        <div onclick="copyText()" class="p-3 cursor-pointer bg-[#1c0b30] text-[#ebdc53] shadow-[0px_2px_#6a2693] font-bold tracking-wide pl-4 rounded-xl flex justify-between items-center"><p id="textToCopy">Password@123</p> <i class="fa-regular fa-copy text-blue-300"></i></div>
+        <!-- settings -->
+        <div class="bg-[#1c0b30] select-none rounded-xl px-5 py-3 text-[#f0e3ef] shadow-[0px_2px_#6a2693]">
+          <div class="flex flex-row justify-between"><h2 class="font-semibold">Password Length</h2><span id="length" class="text-amber-300 font-semibold">10</span></div>
+          <div><input id="slider" type="range" class="w-full [&::-webkit-slider-thumb]:drop-shadow-[0_0_5px_#ebdc53] bg-purple-500 rounded-xl h-2 cursor-pointer accent-yellow-300 appearance-none" min="1" max="20" value="10"></div>
+          <div class="flex flex-col my-3">
+            <div class="flex flex-row items-center relative">
+              <input type="checkbox" id="upper" class="peer appearance-none h-4 w-4 rounded border-2 duration-100 transition-all border-blue-950">
+              <i class="fa-solid pointer-events-none fa-check hidden! peer-checked:block! absolute" style="color: #00ad2b;"></i>
+              <label for="upper" class="ml-1 text-[0.9rem] select-none font-semibold cursor-pointer">Include Uppercase</label>
+            </div>
+            <div class="flex flex-row items-center relative">
+              <input type="checkbox" id="lower" class="peer appearance-none h-4 w-4 rounded border-2 duration-100 transition-all border-blue-950">
+              <i class="fa-solid pointer-events-none fa-check hidden! peer-checked:block! absolute" style="color: #00ad2b;"></i>
+              <label for="lower" class="ml-1 text-[0.9rem] select-none font-semibold cursor-pointer">Include Lowercase</label>
+            </div>
+            <div class="flex flex-row items-center relative">
+              <input type="checkbox" id="symbols" class="peer appearance-none h-4 w-4 rounded border-2 duration-100 transition-all border-blue-950">
+              <i class="fa-solid pointer-events-none fa-check hidden! peer-checked:block! absolute" style="color: #00ad2b;"></i>
+              <label for="symbols" class="ml-1 text-[0.9rem] select-none font-semibold cursor-pointer">Include Symbols</label>
+            </div>
+            <div class="flex flex-row items-center relative">
+              <input type="checkbox" id="numbers" class="peer appearance-none h-4 w-4 rounded border-2 duration-100 transition-all border-blue-950">
+              <i class="fa-solid pointer-events-none fa-check hidden! peer-checked:block! absolute" style="color: #00ad2b;"></i>
+              <label for="numbers" class="ml-1 text-[0.9rem] select-none font-semibold cursor-pointer">Include Numbers</label>
+            </div>
+          </div>
+          <!-- strength -->
+          <div class="flex flex-row justify-between text-[1.1rem] items-center">
+            <h2 class="font-semibold">Strength</h2>
+            <div id="strength" class="w-4 h-4 rounded-full bg-white shadow-[0_0_10px_#ffffff]"></div>
+          </div>
+          <!-- generate button -->
+          <button id="generateBtn" class="bg-[#ba03d2] p-2 rounded-xl mt-3 mb-2 font-bold text-[0.9rem] cursor-pointer tracking-wide w-full shadow-[0px_3px_#ebdc53] text-yellow-400">GENERATE PASSWORD</button>
+        </div> 
+        
+      </div>
+    </section>
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
