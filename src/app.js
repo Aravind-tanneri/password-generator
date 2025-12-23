@@ -53,20 +53,20 @@ function generatePassword(){
     }
     
     //strength
-    let coolor="#ef4444";
-    if(len>=10&&count==4){
+    strengthColor.className="w-4 h-4 rounded-full ";
+    if(len>=10&&count>=3){
         //green
-        coolor="#22c55e";
-    }else if(len>=8&&count==3){
+        strengthColor.className+=`bg-[#22c55e] shadow-[0_0_10px_#22c55e]`;
+    }else if(len>=8&&count>=2){
         //yellow
-        coolor="#eab308";
-    }else if(len>=6&&count==2){
+        strengthColor.className+=`bg-[#eab308] shadow-[0_0_10px_#eab308]`;
+    }else if(len>=6&&count>=2){
         //orange
-        coolor="#f97316";
+        strengthColor.className+=`bg-[#f97316] shadow-[0_0_10px_#f97316]`;
+    }else{
+        strengthColor.className+=`bg-[#ef4444] shadow-[0_0_10px_#ef4444]`;
     }
     
-    strengthColor.className="w-4 h-4 rounded-full ";
-    strengthColor.className+=`bg-[${coolor}] shadow-[0_0_10px_${coolor}]`;
     result.innerText=password;
     console.log(password);
     return;
