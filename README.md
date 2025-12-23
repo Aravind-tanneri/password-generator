@@ -13,7 +13,9 @@ A simple and secure password generator built to practice JavaScript logic and DO
 
 **screen recording**
 
-https://github.com/user-attachments/assets/e9b0cd83-bc86-4133-8b21-e4e4e3dabfa2
+https://github.com/user-attachments/assets/6d20acf0-a328-4303-9308-190b5dc94173
+
+
 
 **Netlify:**https://passgen2026.netlify.app/
 
