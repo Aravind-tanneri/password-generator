@@ -11,8 +11,15 @@ A simple and secure password generator built to practice JavaScript logic and DO
 
 **Responsive Design:** Built with Tailwind CSS to look good on mobile and desktop.
 
+**screen recording**
+
+https://github.com/user-attachments/assets/e9b0cd83-bc86-4133-8b21-e4e4e3dabfa2
+
+**Netlify:**https://passgen2026.netlify.app/
+
+
 **🛠️ Built With ❤️
 HTML5 & Vanilla JavaScript**
 
-Tailwind CSS (for styling and animations)
-Vite (for fast development)
+**Tailwind CSS** (for styling and animations)
+**Vite** (for fast development)
